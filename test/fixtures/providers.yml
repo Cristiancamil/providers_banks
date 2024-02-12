@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Cristian
+  nit: 1052092969
+  name_contact: Mercedes Martínez
+  phone_contact: 3043593810
+  account_number: 08000003973
+
+two:
+  name: Ana
+  nit: 1042351374
+  name_contact: Marta Rivera
+  phone_contact: 3005928829
+  account_number: 0654233152
