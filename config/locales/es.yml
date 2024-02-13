@@ -34,14 +34,14 @@ es:
       delete: 'Eliminar'
     new:
       title: 'Nuevo Proveedor'
-    created:
-      title: '!El proveedor se ha creado correctamente!'
+    create:
+      created: '!El proveedor se ha creado correctamente!'
     edit:
       title: 'Editar Proveedor'
-    updated:
-      title: '!El proveedor se ha actualizdo correctamente!'
-    destroyed:
-      title: '!El proveedor se ha eliminado correctamente!'
+    update:
+      updated: '!El proveedor se ha actualizdo correctamente!'
+    destroy:
+      destroyed: '!El proveedor se ha eliminado correctamente!'
   helpers:
     submit:
       create: 'Crear %{model}'

@@ -27,7 +27,7 @@ es:
     confirm: ¿Are you sure you want to delete?
   providers:
     index:
-      title: List of providers
+      title: 'List of providers'
     show:
       title: Detail of provide
       edit: Edit

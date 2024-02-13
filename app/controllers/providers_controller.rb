@@ -15,7 +15,7 @@ class ProvidersController < ApplicationController
     def create
         @provider = Provider.new(provider_params)
         if @provider.save
-            redirect_to providers_path, notice: 'Provider was successfully created'
+            redirect_to providers_path, notice: t('.created')
         else
             render :new, status: :unprocessable_entity
         end
@@ -27,7 +27,7 @@ class ProvidersController < ApplicationController
 
     def update
         if provider.update(provider_params)
-            redirect_to providers_path, notice: 'Provider was successfully updated'
+            redirect_to providers_path, notice: t('.updated')
         else
             render :edit, status: :unprocessable_entity
         end
@@ -35,7 +35,7 @@ class ProvidersController < ApplicationController
 
     def destroy
         provider.destroy
-        redirect_to providers_path, notice: 'Provider was successfully destroyed'
+        redirect_to providers_path, notice: t('.destroyed')
     end
 
     private 
