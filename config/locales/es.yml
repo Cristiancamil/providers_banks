@@ -1,0 +1,54 @@
+es:
+  activerecord:
+    models:
+      provider: Proveedor
+    attributes:
+      provider:
+        name: Nombre
+        nit: Nit
+        name_contact: Nombre del contacto
+        phone_contact: Telefono del contacto
+        account_number: Numero de cuenta
+    errors:
+      models:
+        provider:
+          attributes:
+            name:
+              blank: '!El campo está vacio!'
+            nit:
+              blank: '!El campo está vacio!'
+            name_contact:
+              blank: '!El campo está vacio!'
+            phone_contact:
+              blank: '!El campo está vacio!'
+            account_number:
+              blank: '!El campo está vacio!'
+  common:
+    confirm: '¿Está seguro de que desea borrar?'
+  providers:
+    index:
+      title: 'Listado de proveedores'
+    show:
+      title: 'Detalle del proveedor'
+      edit: 'Editar'
+      delete: 'Eliminar'
+    new:
+      title: 'Nuevo Proveedor'
+    created:
+      title: '!El proveedor se ha creado correctamente!'
+    edit:
+      title: 'Editar Proveedor'
+    updated:
+      title: '!El proveedor se ha actualizdo correctamente!'
+    destroyed:
+      title: '!El proveedor se ha eliminado correctamente!'
+  helpers:
+    submit:
+      create: 'Crear %{model}'
+      update: 'Actualizar %{model}'
+      delete: 'Eliminar %{model}'
+      cancel: 'Cancelar'
+      save:   'Guardar %{model}'
+      close:  'Cerrar '
+      continue: 'Continuar'
+  assets:
