@@ -2,12 +2,12 @@ require "test_helper"
 
 class ProviderTest < ActiveSupport::TestCase
   
-  test "Render a list of providers" do
+  test "Query a list of providers" do
     provider = Provider.all
     assert provider.present?
   end
 
-  test "Render a single provider" do
+  test "Query a single provider" do
     provider = Provider.first
     assert provider.present?
   end
@@ -24,7 +24,7 @@ class ProviderTest < ActiveSupport::TestCase
     assert provider.save, "Provider #{provider.name} was saved successfully"
   end
 
-  test "Update a provider" do
+  test "Updated a provider" do
 
     provider = Provider.find_by(nit: "1052092969")
     assert_not_nil provider, "Provider #{provider.name} was not"
@@ -39,7 +39,7 @@ class ProviderTest < ActiveSupport::TestCase
     assert provider.valid?, "Provider #{provider.name} was updated successfully"
   end
 
-  test "Delete a provider" do
+  test "Deleted a provider" do
     provider = Provider.find_by(nit: "1052092969")
 
     assert_not_nil provider, "Provider #{provider.name} was not"

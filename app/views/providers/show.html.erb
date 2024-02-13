@@ -1,0 +1,12 @@
+<h1 class = "name"> <%= @provider.name %> </h1>
+<p> <%= @provider.nit %> </p>
+<p> <%= @provider.name_contact %> </p>
+<p> <%= @provider.phone_contact %> </p>
+<p> <%= @provider.account_number %> </p>
+
+<%= link_to 'editar', edit_provider_path(@provider) %>
+
+<%= link_to 'eliminar', provider_path(@provider), data: {
+    turbo_method: 'delete',
+    turbo_confirm: 'Are you sure you want to delete'
+} %>

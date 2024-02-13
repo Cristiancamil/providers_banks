@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Cristian
+  name: Cristian Camilo
   nit: 1052092969
   name_contact: Mercedes Martínez
   phone_contact: 3043593810
