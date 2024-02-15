@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_15_163151) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_15_170022) do
   create_table "cities", primary_key: "city_code", id: :string, force: :cascade do |t|
     t.string "city_name"
     t.string "department_code"
@@ -39,8 +39,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_15_163151) do
     t.string "account_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "country_code"
+    t.string "department_code"
+    t.string "city_code"
+    t.string "address"
   end
 
   add_foreign_key "cities", "departments", column: "department_code", primary_key: "department_code"
   add_foreign_key "departments", "countries", column: "country_code", primary_key: "country_code"
+  add_foreign_key "providers", "cities", column: "city_code", primary_key: "city_code"
+  add_foreign_key "providers", "countries", column: "country_code", primary_key: "country_code"
+  add_foreign_key "providers", "departments", column: "department_code", primary_key: "department_code"
 end

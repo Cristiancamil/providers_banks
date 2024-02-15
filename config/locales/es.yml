@@ -9,6 +9,10 @@ es:
         name_contact: Nombre del contacto
         phone_contact: Telefono del contacto
         account_number: Numero de cuenta
+        country_code: Pais
+        department_code: Departamento
+        city_code: Ciudad
+        address: Direccion
     errors:
       models:
         provider:
@@ -22,6 +26,14 @@ es:
             phone_contact:
               blank: '!El campo está vacio!'
             account_number:
+              blank: '!El campo está vacio!'
+            country_code:
+              blank: '!El campo está vacio!'
+            department_code:
+              blank: '!El campo está vacio!'
+            city_code:
+              blank: '!El campo está vacio!'
+            address:
               blank: '!El campo está vacio!'
   common:
     confirm: '¿Está seguro de que desea borrar?'
