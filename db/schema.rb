@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_12_222016) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_15_134725) do
+  create_table "countries", primary_key: "country_code", id: :string, force: :cascade do |t|
+    t.string "country_name"
+    t.string "country_flag"
+    t.datetime "created_at", precision: nil, default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "updated_at", precision: nil, default: -> { "CURRENT_TIMESTAMP" }, null: false
+  end
+
   create_table "providers", primary_key: "nit", id: :string, force: :cascade do |t|
     t.string "name"
     t.string "name_contact"
