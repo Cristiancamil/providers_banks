@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_15_140148) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_15_163151) do
+  create_table "cities", primary_key: "city_code", id: :string, force: :cascade do |t|
+    t.string "city_name"
+    t.string "department_code"
+    t.datetime "created_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "updated_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
+  end
+
   create_table "countries", primary_key: "country_code", id: :string, force: :cascade do |t|
     t.string "country_name"
     t.string "country_flag"
@@ -21,8 +28,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_15_140148) do
   create_table "departments", primary_key: "department_code", id: :string, force: :cascade do |t|
     t.string "department_name"
     t.string "country_code"
-    t.datetime "created_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
-    t.datetime "updated_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "created_at", precision: nil, default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "updated_at", precision: nil, default: -> { "CURRENT_TIMESTAMP" }, null: false
   end
 
   create_table "providers", primary_key: "nit", id: :string, force: :cascade do |t|
@@ -34,5 +41,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_15_140148) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "cities", "departments", column: "department_code", primary_key: "department_code"
   add_foreign_key "departments", "countries", column: "country_code", primary_key: "country_code"
 end
