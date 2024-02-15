@@ -31,6 +31,26 @@
     </div>
 
     <div>
+        <%= form.label :country_code, "Seleccionar pais" %>
+        <%= form.collection_select :country_code, Country.all, :country_code, :country_name %>
+    </div>
+
+    <div>
+        <%= form.label :department_code, "Seleccionar departamento" %>
+        <%= form.collection_select :department_code, Department.all, :department_code, :department_name %>
+    </div>
+
+    <div>
+        <%= form.label :city_code, "Seleccionar ciudad" %>
+        <%= form.collection_select :city_code, City.all, :city_code, :city_name %>
+    </div>
+
+    <div>
+        <%= form.label :address, style: "display: block" %>
+        <%= form.text_field :address %>
+    </div>
+
+    <div>
         <%= form.submit %>
     </div>
 <% end %>
