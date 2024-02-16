@@ -1,11 +1,12 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the "{}" from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one: 
+  country_code: "CO"
+  country_name: "COLOMBIA"
+  country_flag: "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+
+two: 
+  country_code: "BR"  
+  country_name: "BRAZIL"
+  country_flag: "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
+

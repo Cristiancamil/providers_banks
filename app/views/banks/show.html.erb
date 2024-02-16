@@ -1,0 +1,33 @@
+<h1>Banks#show</h1>
+
+
+<h1 class="name">
+    <%= @bank.name %>
+</h1>
+
+<p> <%= @bank.address %> </p>
+
+<p> <%= @bank.phone %> </p>
+
+<p> <%= @bank.email %> </p>
+
+<p> <%= @bank.web_site %> </p>
+
+<p> <%= @bank.provider_nit %> </p>
+
+<p> <%= @bank.country_code %> </p>
+
+<p> <%= @bank.department_code %> </p>
+
+<p> <%= @bank.city_code %> </p>
+
+<p> <%= @bank.type_account %> </p>
+
+<p> <%= @bank.aditional_information %> </p>
+
+<%= link_to t('.edit'), edit_bank_path(@bank) %>
+
+<%= link_to t('.delete'), bank_path(@bank), data: {
+    turbo_method: 'delete',
+    turbo_confirm: t('common.confirm')
+} %>

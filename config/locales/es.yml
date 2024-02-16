@@ -2,6 +2,7 @@ es:
   activerecord:
     models:
       provider: Proveedor
+      bank: Bank
     attributes:
       provider:
         name: Nombre
@@ -13,6 +14,18 @@ es:
         department_code: Departamento
         city_code: Ciudad
         address: Direccion
+      bank:
+        name: 'Nombre'
+        address: 'Dirección'
+        Phone: 'Phone'
+        email: 'Email'
+        web_site: 'Sitio web'
+        provider_nit: 'Nit del proveedor'
+        country_code: 'Pais'
+        department_code: 'Departamento'
+        city_code: 'Ciudad'
+        type_account: 'Tipo de cuenta'
+        aditional_information: 'Informacion adicional'
     errors:
       models:
         provider:
@@ -35,6 +48,30 @@ es:
               blank: '!El campo está vacio!'
             address:
               blank: '!El campo está vacio!'
+        bank:
+          attributes:
+            name:
+              blank: '!El campo está vacio!'
+            address:
+              blank: '!El campo está vacio!'
+            Phone:
+             blank: '!El campo está vacio!'
+            email:
+             blank: '!El campo está vacio!'
+            web_site:
+             blank: '!El campo está vacio!'
+            provider_nit:
+             blank: '!El campo está vacio!'
+            country_code:
+             blank: '!El campo está vacio!'
+            department_code:
+             blank: '!El campo está vacio!'
+            city_code:
+             blank: '!El campo está vacio!'
+            type_account:
+             blank: '!El campo está vacio!'
+            aditional_information:
+              blank: '!El campo está vacio!'
   common:
     confirm: '¿Está seguro de que desea borrar?'
   providers:
@@ -47,13 +84,30 @@ es:
     new:
       title: 'Nuevo Proveedor'
     create:
-      created: '!El proveedor se ha creado correctamente!'
+      created: 'El proveedor se ha creado correctamente'
     edit:
       title: 'Editar Proveedor'
     update:
-      updated: '!El proveedor se ha actualizdo correctamente!'
+      updated: 'El proveedor se ha actualizdo correctamente'
     destroy:
-      destroyed: '!El proveedor se ha eliminado correctamente!'
+      destroyed: 'El proveedor se ha eliminado correctamente'
+  banks:
+   index:
+     title: 'Listado de bancos'
+   show:
+    title: 'Detalle del banco'
+    edit: 'Editar'
+    delete: 'Eliminar'
+   new:
+    title: 'Nuevo Banco'
+   created:
+    title: 'El banco se ah creado correctamente'
+   edit:
+    title: 'Editar Banco'
+   updated:
+    title: 'El banco se ah actualizado correctamente'
+   destroyed:
+    title: 'El banco se ah eliminado correctamente'
   helpers:
     submit:
       create: 'Crear %{model}'
