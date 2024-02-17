@@ -93,21 +93,21 @@ es:
       destroyed: 'El proveedor se ha eliminado correctamente'
   banks:
    index:
-     title: 'Listado de bancos'
+      title: 'Listado de bancos'
    show:
-    title: 'Detalle del banco'
-    edit: 'Editar'
-    delete: 'Eliminar'
+      title: 'Detalle del banco'
+      edit: 'Editar'
+      delete: 'Eliminar'
    new:
-    title: 'Nuevo Banco'
-   created:
-    title: 'El banco se ah creado correctamente'
+      title: 'Nuevo Banco'
+   create:
+      created: 'El banco se ah creado correctamente'
    edit:
-    title: 'Editar Banco'
-   updated:
-    title: 'El banco se ah actualizado correctamente'
-   destroyed:
-    title: 'El banco se ah eliminado correctamente'
+      title: 'Editar Banco'
+   update:
+      updated: 'El banco se ah actualizado correctamente'
+   destroy:
+      destroyed: 'El banco se ah eliminado correctamente'
   helpers:
     submit:
       create: 'Crear %{model}'
