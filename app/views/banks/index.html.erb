@@ -1,2 +1,4 @@
 <h1> <%= t('.title') %> </h1>
+
+<%= link_to t('.new_bank'), new_bank_path %>
 <%= render partial: 'bank', collection: @banks %>
