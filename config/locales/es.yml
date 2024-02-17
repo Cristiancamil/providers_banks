@@ -2,7 +2,7 @@ es:
   activerecord:
     models:
       provider: Proveedor
-      bank: Bank
+      bank: Banco
     attributes:
       provider:
         name: Nombre
@@ -76,7 +76,8 @@ es:
     confirm: '¿Está seguro de que desea borrar?'
   providers:
     index:
-      title: 'Listado de proveedores'
+      title: 'Proveedores'
+      new_provider: 'Crear Proveedor'
     show:
       title: 'Detalle del proveedor'
       edit: 'Editar'
@@ -93,7 +94,8 @@ es:
       destroyed: 'El proveedor se ha eliminado correctamente'
   banks:
    index:
-      title: 'Listado de bancos'
+      title: 'Bancos'
+      new_bank: 'Crear Banco'
    show:
       title: 'Detalle del banco'
       edit: 'Editar'
@@ -118,3 +120,7 @@ es:
       close:  'Cerrar '
       continue: 'Continuar'
   assets:
+  shared:
+    header:
+      provider: 'Proveedor'
+      bank: 'Banco'
