@@ -42,6 +42,23 @@ es:
       title: The provider was successfully updated
     destroyed:
       title: The provider was successfully destroyed
+  banks:
+   index:
+     title: 'List of banks'
+   show:
+    title: Detail of bank
+    edit: Edit
+    delete: Delete
+   new:
+    title: New Bank
+   created:
+    title: The bank was successfully created
+   edit:
+    title: Edit Bank
+   updated:
+    title: The bank was successfully updated
+   destroyed:
+    title: The bank was successfully destroyed
   helpers:
     submit:
       create: 'Create %{model}'

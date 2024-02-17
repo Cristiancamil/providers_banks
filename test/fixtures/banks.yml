@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: "Banco de Bogotá"
+  address: "Cra 18g - 25 20"
+  phone: "3011565993"
+  email: "test_bank@prueba.com"
+  web_site: "wwww.banco.com.co"
+  provider_nit: "1052092969"
+  country_code: "CO"
+  department_code: "ATL"
+  city_code: "08001"
+  type_account: "Ahorro"
+  aditional_information: "Other"
+
+two:
+  name: "Banco BBVA"
+  address: "Cra 17l - 10 68"
+  phone: "3005928829"
+  email: "test_bank@prueba.com"
+  web_site: "wwww.banco.com.co"
+  provider_nit: "1052092969"
+  country_code: "CO"
+  department_code: "ATL"
+  city_code: "08001"
+  type_account: "Ahorro"
+  aditional_information: "Other"

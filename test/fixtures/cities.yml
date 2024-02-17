@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one: 
+  city_code: "91263"
+  city_name: "EL ENCANTO"
+  department_code: "AMA"
+
+two:
+  city_code: "08001"
+  city_name: "BARRANQUILLA"
+  department_code: "ATL"
